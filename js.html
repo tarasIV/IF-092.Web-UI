@@ -1,0 +1,125 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+
+	function fn1() {
+		console.log("Hello JavaScript");
+	}
+	fn1();
+
+	
+
+	 function summa(a, b) {			
+	 	return a + b;
+	 };
+	 console.log(summa(1, 1));
+
+	 function sub(a, b) {
+	 	return a - b;
+	 };
+	console.log(sub(2, 1));
+
+	function mul(a, b) {
+		return a * b;
+	};
+	console.log(mul(2, 4));
+
+	function div(a, b) {
+		return a / b;
+	};
+	console.log(div(4, 2));
+
+	function printAll(a, b){
+    console.log(summa(a, b));
+console.log(sub(a, b));
+console.log(mul(a, b));
+console.log(div(a, b));
+}
+
+printAll(2, 2);
+
+	function calcArea(r){
+	return Math.PI * r * r;
+}
+
+function calcPerimeter(r){
+	return 2 * Math.PI * r;
+}
+
+console.log(calcPerimeter(10));
+console.log(calcArea(10));
+
+function circle(r) {
+return 2 * Math.PI * r;
+	}
+	console.log(circle(10));
+
+	
+	
+	var m=100;
+	var n;
+	
+	if ( m>0 ) {
+		n=1;
+	} else if (m=0) { 
+		n=0; }
+	else if (m<0) {
+			n=-1;
+	}
+	console.log(n);
+var n=2;
+
+	function isEven(x) {
+	
+		return x%2 ==0;
+	}
+	console.log('n is even:' + isEven(n));
+	console.log('n is even:' + !isEven(n));
+	
+var prod= 1;
+var sum =0;
+
+
+console.log("sum:" + sum);
+console.log("prod:" + prod);
+
+
+
+var sum = 0;
+	n=4;
+	for (i=0; i<=10**n; i=i*10 +1) {
+		sum =sum + i ; }
+
+console.log(sum);  
+
+function LeapYear (year) {
+	if (year % 4 !==0) {
+		return false;
+	} else if (year % 100 !== 0) {
+	return true ; 
+	}	else if (year % 400 !==0) {
+			return false; 
+		} else {
+			return true;
+		}
+	
+				
+}
+
+console.log(LeapYear(1200));
+
+// year = window.prompt("Input a Year : ");
+//x = (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+//console.log(x); 
+
+day = window.prompt("Input a Day : ");
+x = (day % 10 === 0) ? (day % 4 === 0) : (day % 3 === 0);
+console.log(x);
+
+</script>
+</body>
+</html>
